@@ -1,0 +1,10 @@
+Trigger Vercel rebuild
+
+Date: 2026-10-18T00:00:00Z
+Purpose: commit made to force Vercel to rebuild and pick up latest changes (URL replacement already present in page1/*.html). 
+
+Files verified and reason:
+- page1/*.html — contains https://www.admin-atlantic.org/ (old URL already replaced)
+- vercel.json — buildCommand: npm run build, outputDirectory: dist
+
+If the Vercel deployment still shows the old URL, check Vercel project settings (Git integration, branch = main, Automatic Deploys enabled) or trigger a redeploy from Vercel dashboard.
